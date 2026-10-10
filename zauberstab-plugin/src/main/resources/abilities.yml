@@ -1,0 +1,640 @@
+# Fähigkeiten-Konfiguration
+# Jede Fähigkeit hat Tags, die für die Kombinations-Engine verwendet werden
+
+abilities:
+  # Wasser-Fähigkeiten
+  water_blast:
+    name: "Wasserstoß"
+    description: "Ein kraftvoller Wasserstoß"
+    element: "water"
+    max_level: 5
+    mana_cost: [20, 25, 30, 35, 40]
+    cooldown: [5, 4, 3, 2, 1]
+    base_power: 10
+    tags:
+      - damage
+      - range
+      - water
+
+  water_heal:
+    name: "Wasserheilung"
+    description: "Heilt mit Wasser-Energie"
+    element: "water"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [8, 7, 6, 5, 4]
+    base_power: 8
+    tags:
+      - heal
+      - water
+      - support
+
+  # Feuer-Fähigkeiten
+  fire_burst:
+    name: "Feuerexplosion"
+    description: "Eine explosive Feuerattacke"
+    element: "fire"
+    max_level: 5
+    mana_cost: [30, 35, 40, 45, 50]
+    cooldown: [6, 5, 4, 3, 2]
+    base_power: 12
+    tags:
+      - damage
+      - aoe
+      - fire
+      - burn
+
+  fire_shield:
+    name: "Feuerschild"
+    description: "Schützt mit Flammen"
+    element: "fire"
+    max_level: 5
+    mana_cost: [20, 25, 30, 35, 40]
+    cooldown: [10, 9, 8, 7, 6]
+    base_power: 6
+    tags:
+      - defense
+      - fire
+      - support
+
+  # Eis-Fähigkeiten
+  ice_spike:
+    name: "Eisspeer"
+    description: "Schießt scharfe Eiskristalle"
+    element: "ice"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [4, 3, 2, 1, 1]
+    base_power: 11
+    tags:
+      - damage
+      - range
+      - ice
+      - slow
+
+  ice_freeze:
+    name: "Eisfrost"
+    description: "Verlangsamt Gegner"
+    element: "ice"
+    max_level: 5
+    mana_cost: [20, 25, 30, 35, 40]
+    cooldown: [7, 6, 5, 4, 3]
+    base_power: 5
+    tags:
+      - cc
+      - ice
+      - slow
+
+  # Blitz-Fähigkeiten
+  lightning_strike:
+    name: "Blitzschlag"
+    description: "Ein direkter Blitzangriff"
+    element: "lightning"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [8, 7, 6, 5, 4]
+    base_power: 14
+    tags:
+      - damage
+      - lightning
+      - stun
+
+  lightning_chain:
+    name: "Blitzkette"
+    description: "Blitze springen zwischen Gegnern"
+    element: "lightning"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [10, 9, 8, 7, 6]
+    base_power: 10
+    tags:
+      - damage
+      - aoe
+      - lightning
+      - chain
+
+  # Erde-Fähigkeiten
+  earth_quake:
+    name: "Erdbeben"
+    description: "Erschüttert den Boden"
+    element: "earth"
+    max_level: 5
+    mana_cost: [30, 35, 40, 45, 50]
+    cooldown: [9, 8, 7, 6, 5]
+    base_power: 13
+    tags:
+      - damage
+      - aoe
+      - earth
+      - stun
+
+  earth_wall:
+    name: "Erdwall"
+    description: "Erschafft eine schützende Wand"
+    element: "earth"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [12, 11, 10, 9, 8]
+    base_power: 7
+    tags:
+      - defense
+      - earth
+      - support
+
+  # Wasser erweitert
+  water_wave:
+    name: "Wasserwelle"
+    description: "Stoßt Feinde im Umkreis zurück"
+    element: "water"
+    max_level: 5
+    mana_cost: [30, 35, 40, 45, 50]
+    cooldown: [10, 9, 8, 7, 6]
+    base_power: 8
+    tags:
+      - water
+      - aoe
+      - knockback
+
+  water_breath:
+    name: "Wasseratem"
+    description: "Gewährt Unterwasseratem und Geschwindigkeit"
+    element: "water"
+    max_level: 5
+    mana_cost: [20, 25, 30, 35, 40]
+    cooldown: [18, 16, 14, 12, 10]
+    base_power: 0
+    tags:
+      - water
+      - support
+      - speed
+
+  # Feuer erweitert
+  fire_wall:
+    name: "Feuerwand"
+    description: "Eine brennende Barriere"
+    element: "fire"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [14, 13, 12, 11, 10]
+    base_power: 9
+    tags:
+      - fire
+      - defense
+      - aoe
+
+  fire_storm:
+    name: "Feuersturm"
+    description: "Regen aus Feuerbällen"
+    element: "fire"
+    max_level: 5
+    mana_cost: [50, 55, 60, 65, 70]
+    cooldown: [18, 17, 16, 15, 14]
+    base_power: 15
+    tags:
+      - fire
+      - damage
+      - aoe
+
+  # Eis erweitert
+  ice_armor:
+    name: "Eispanzer"
+    description: "Reduziert kurzzeitig Schaden"
+    element: "ice"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [20, 18, 16, 14, 12]
+    base_power: 0
+    tags:
+      - ice
+      - defense
+      - support
+
+  ice_blizzard:
+    name: "Blizzard"
+    description: "Kältewelle trifft Gegner"
+    element: "ice"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [16, 15, 14, 13, 12]
+    base_power: 12
+    tags:
+      - ice
+      - damage
+      - aoe
+      - slow
+
+  # Blitz erweitert
+  lightning_speed:
+    name: "Blitzgeschwindigkeit"
+    description: "Werde kurzzeitig sehr schnell"
+    element: "lightning"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [20, 18, 16, 14, 12]
+    base_power: 0
+    tags:
+      - lightning
+      - speed
+      - support
+
+  lightning_shield:
+    name: "Blitzschild"
+    description: "Schlägt Angreifer mit Blitzen zurück"
+    element: "lightning"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [16, 15, 14, 13, 12]
+    base_power: 0
+    tags:
+      - lightning
+      - defense
+      - support
+
+  # Erde erweitert
+  earth_armor:
+    name: "Erdrüstung"
+    description: "Erhöht kurzzeitig Rüstung"
+    element: "earth"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [20, 18, 16, 14, 12]
+    base_power: 0
+    tags:
+      - earth
+      - defense
+      - support
+
+  earth_fist:
+    name: "Erdfaust"
+    description: "Ein mächtiger steinerner Schlag"
+    element: "earth"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [10, 9, 8, 7, 6]
+    base_power: 14
+    tags:
+      - earth
+      - damage
+      - stun
+
+  # Mana-Fähigkeiten (passive Effekte)
+  max_mana:
+    name: "Mana-Pool"
+    description: "Erhöht dein maximales Mana (passiv)"
+    element: "neutral"
+    max_level: 5
+    mana_cost: [0, 0, 0, 0, 0]
+    cooldown: [0, 0, 0, 0, 0]
+    base_power: 0
+    tags:
+      - support
+      - mana
+
+  mana_regen:
+    name: "Mana-Regeneration"
+    description: "Erhöht Mana-Regeneration (passiv)"
+    element: "neutral"
+    max_level: 5
+    mana_cost: [0, 0, 0, 0, 0]
+    cooldown: [0, 0, 0, 0, 0]
+    base_power: 0
+    tags:
+      - support
+      - mana
+
+  mana_shield:
+    name: "Mana-Schild"
+    description: "Mana absorbiert kurzzeitig Schaden"
+    element: "neutral"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [20, 18, 16, 14, 12]
+    base_power: 0
+    tags:
+      - support
+      - defense
+      - mana
+
+  mana_mastery:
+    name: "Mana-Meisterschaft"
+    description: "Reduziert Manakosten aller Fähigkeiten"
+    element: "neutral"
+    max_level: 5
+    mana_cost: [0, 0, 0, 0, 0]
+    cooldown: [0, 0, 0, 0, 0]
+    base_power: 0
+    tags:
+      - support
+      - mana
+
+  # Verbotene Magie
+  shadow_cloak:
+    name: "Schattenmantel"
+    description: "Macht dich für kurze Zeit unsichtbar"
+    element: "dark"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [20, 18, 16, 14, 12]
+    base_power: 0
+    tags:
+      - dark
+      - support
+      - stealth
+
+  shadow_mark:
+    name: "Mal der Verdammnis"
+    description: "Markiert ein Ziel: es leuchtet und nimmt mehr Schaden"
+    element: "dark"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [15, 14, 13, 12, 11]
+    base_power: 0
+    tags:
+      - dark
+      - debuff
+      - mark
+
+  soul_drain:
+    name: "Seelenentzug"
+    description: "Schädigt den Gegner und heilt dich"
+    element: "dark"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [12, 11, 10, 9, 8]
+    base_power: 10
+    tags:
+      - dark
+      - damage
+      - lifesteal
+
+  shadow_step:
+    name: "Schritt der Schatten"
+    description: "Teleportiere dich ein Stück nach vorne"
+    element: "dark"
+    max_level: 5
+    mana_cost: [30, 35, 40, 45, 50]
+    cooldown: [10, 9, 8, 7, 6]
+    base_power: 0
+    tags:
+      - dark
+      - mobility
+      - stealth
+
+  # Wasser weiter erweitert
+  water_geyser:
+    name: "Wassergeysir"
+    description: "Schleudert Gegner in die Luft"
+    element: "water"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [12, 11, 10, 9, 8]
+    base_power: 14
+    tags:
+      - water
+      - damage
+      - cc
+      - knockback
+
+  water_bubble:
+    name: "Wasserblase"
+    description: "Schützende Wasserblase"
+    element: "water"
+    max_level: 5
+    mana_cost: [30, 35, 40, 45, 50]
+    cooldown: [22, 20, 18, 16, 14]
+    base_power: 0
+    tags:
+      - water
+      - defense
+      - support
+
+  # Feuer weiter erweitert
+  fire_spread:
+    name: "Feuerausbreitung"
+    description: "Verbreitet Flammen in der Umgebung"
+    element: "fire"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [14, 13, 12, 11, 10]
+    base_power: 11
+    tags:
+      - fire
+      - aoe
+      - burn
+      - damage
+
+  fire_phoenix:
+    name: "Phönix"
+    description: "Werde kurzzeitig unverwundbar"
+    element: "fire"
+    max_level: 5
+    mana_cost: [45, 50, 55, 60, 65]
+    cooldown: [30, 28, 26, 24, 22]
+    base_power: 0
+    tags:
+      - fire
+      - defense
+      - support
+
+  # Eis weiter erweitert
+  ice_lance:
+    name: "Eislanze"
+    description: "Durchbohrt Gegner mit eisiger Spitze"
+    element: "ice"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [9, 8, 7, 6, 5]
+    base_power: 16
+    tags:
+      - ice
+      - damage
+      - range
+      - slow
+
+  ice_shard:
+    name: "Eissplitter"
+    description: "Feuert mehrere Eissplitter"
+    element: "ice"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [10, 9, 8, 7, 6]
+    base_power: 8
+    tags:
+      - ice
+      - damage
+      - aoe
+
+  # Blitz weiter erweitert
+  lightning_dash:
+    name: "Blitz-Dash"
+    description: "Rasante Bewegung in Blickrichtung"
+    element: "lightning"
+    max_level: 5
+    mana_cost: [25, 30, 35, 40, 45]
+    cooldown: [8, 7, 6, 5, 4]
+    base_power: 0
+    tags:
+      - lightning
+      - speed
+      - mobility
+
+  lightning_orb:
+    name: "Blitzkugel"
+    description: "Eine kugelförmige Blitzentladung"
+    element: "lightning"
+    max_level: 5
+    mana_cost: [45, 50, 55, 60, 65]
+    cooldown: [12, 11, 10, 9, 8]
+    base_power: 13
+    tags:
+      - lightning
+      - damage
+      - aoe
+
+  # Erde weiter erweitert
+  earth_pillar:
+    name: "Erdpfeiler"
+    description: "Spießt Gegner aus der Erde auf"
+    element: "earth"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [13, 12, 11, 10, 9]
+    base_power: 17
+    tags:
+      - earth
+      - damage
+      - range
+      - cc
+
+  earth_quicksand:
+    name: "Treibsand"
+    description: "Zieht Gegner in die Erde"
+    element: "earth"
+    max_level: 5
+    mana_cost: [35, 40, 45, 50, 55]
+    cooldown: [16, 15, 14, 13, 12]
+    base_power: 6
+    tags:
+      - earth
+      - cc
+      - slow
+
+  # Mana weiter erweitert
+  mana_barrier:
+    name: "Mana-Barriere"
+    description: "Mana absorbiert eingehenden Schaden"
+    element: "neutral"
+    max_level: 5
+    mana_cost: [45, 50, 55, 60, 65]
+    cooldown: [24, 22, 20, 18, 16]
+    base_power: 0
+    tags:
+      - support
+      - defense
+      - mana
+
+  mana_infusion:
+    name: "Mana-Infusion"
+    description: "Stellt Mana schneller wieder her"
+    element: "neutral"
+    max_level: 5
+    mana_cost: [20, 25, 30, 35, 40]
+    cooldown: [30, 28, 26, 24, 22]
+    base_power: 0
+    tags:
+      - support
+      - mana
+      - heal
+
+  # Dunkle Magie weiter erweitert
+  dark_void:
+    name: "Dunkle Leere"
+    description: "Verursacht Schaden und blendet Gegner"
+    element: "dark"
+    max_level: 5
+    mana_cost: [45, 50, 55, 60, 65]
+    cooldown: [18, 17, 16, 15, 14]
+    base_power: 15
+    tags:
+      - dark
+      - damage
+      - debuff
+
+  shadow_clone:
+    name: "Schatten-Klon"
+    description: "Erstelle einen täuschenden Klon"
+    element: "dark"
+    max_level: 5
+    mana_cost: [40, 45, 50, 55, 60]
+    cooldown: [24, 22, 20, 18, 16]
+    base_power: 0
+    tags:
+      - dark
+      - support
+      - stealth
+
+# Tag-Definitionen und deren Effekte
+tags:
+  damage:
+    description: "Verursacht Schaden"
+    effect_type: "offensive"
+    
+  heal:
+    description: "Heilt den Spieler"
+    effect_type: "support"
+    
+  range:
+    description: "Fernkampf-Fähigkeit"
+    effect_type: "modifier"
+    
+  aoe:
+    description: "Flächenschaden"
+    effect_type: "modifier"
+    
+  fire:
+    description: "Feuer-Element"
+    effect_type: "element"
+    
+  water:
+    description: "Wasser-Element"
+    effect_type: "element"
+    
+  ice:
+    description: "Eis-Element"
+    effect_type: "element"
+    
+  lightning:
+    description: "Blitz-Element"
+    effect_type: "element"
+    
+  earth:
+    description: "Erde-Element"
+    effect_type: "element"
+    
+  burn:
+    description: "Verursacht Brandschaden"
+    effect_type: "debuff"
+    
+  slow:
+    description: "Verlangsamt den Gegner"
+    effect_type: "debuff"
+    
+  stun:
+    description: "Betäubt den Gegner"
+    effect_type: "debuff"
+    
+  cc:
+    description: "Crowd Control"
+    effect_type: "debuff"
+    
+  chain:
+    description: "Springt zwischen Gegnern"
+    effect_type: "modifier"
+    
+  support:
+    description: "Unterstützungs-Fähigkeit"
+    effect_type: "support"
+    
+  defense:
+    description: "Defensive Fähigkeit"
+    effect_type: "support"

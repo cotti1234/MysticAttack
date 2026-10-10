@@ -1,0 +1,40 @@
+moon_staff_shaped:
+  result:
+    nexo_item: moon_staff
+  ingredients:
+    A:
+      minecraft_type: DIAMOND
+    B:
+      minecraft_type: OBSIDIAN
+  shape:
+    - AAA
+    - BBB
+    - _B_
+staff_stab_shaped:
+  result:
+    nexo_item: staff_stab
+  ingredients:
+    A:
+      minecraft_type: IRON_NUGGET
+    B:
+      minecraft_type: STRING
+    C:
+      minecraft_type: STICK
+  shape:
+    - _AB
+    - _AC
+    - __C
+wasser_stab_shaped:
+  result:
+    nexo_item: wasser_stab
+  ingredients:
+    A:
+      minecraft_type: WATER_BUCKET
+    B:
+      minecraft_type: DIAMOND
+    C:
+      minecraft_type: STICK
+  shape:
+    - _A_
+    - BCB
+    - _C_

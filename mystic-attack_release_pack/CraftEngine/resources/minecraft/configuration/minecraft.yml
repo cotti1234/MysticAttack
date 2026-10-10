@@ -1,0 +1,120 @@
+items:
+  minecraft:ban_hammer:
+    material: paper
+    data:
+      item_name: Ban Hammer
+      attribute_modifiers:
+        - type: attack_damage
+          amount: 100
+          slot: mainhand
+          operation: add_value
+        - type: attack_speed
+          amount: 1
+          slot: mainhand
+          operation: add_value
+        - type: knockback_resistance
+          amount: 10
+          slot: any
+          operation: add_value
+      components:
+        minecraft:max_stack_size: 1
+    model:
+      type: minecraft:model
+      path: minecraft:item/ban_hammer
+  minecraft:moon_staff:
+    material: paper
+    data:
+      item_name: Moon Staff
+      attribute_modifiers:
+        - type: attack_damage
+          amount: 6
+          slot: mainhand
+          operation: add_value
+        - type: attack_speed
+          amount: 0.6000000000000001
+          slot: mainhand
+          operation: add_multiplied_total
+    model:
+      type: minecraft:model
+      path: minecraft:item/moon_staff
+  minecraft:staff_stab:
+    material: paper
+    data:
+      item_name: Staff stab
+      attribute_modifiers:
+        - type: attack_damage
+          amount: 6
+          slot: mainhand
+          operation: add_value
+        - type: attack_speed
+          amount: 0.6000000000000001
+          slot: mainhand
+          operation: add_multiplied_total
+    model:
+      type: minecraft:model
+      path: minecraft:item/staff_stab
+  minecraft:wasser_stab:
+    material: paper
+    data:
+      item_name: Wasser Stab
+      attribute_modifiers:
+        - type: attack_damage
+          amount: 6
+          slot: mainhand
+          operation: add_value
+        - type: attack_speed
+          amount: 0.6000000000000001
+          slot: mainhand
+          operation: add_multiplied_total
+    model:
+      type: minecraft:model
+      path: minecraft:item/wasser_stab
+categories:
+  minecraft:minecraft:
+    name: <!i>Minecraft
+    icon: minecraft:ban_hammer
+    priority: 1
+    list:
+      - minecraft:ban_hammer
+      - minecraft:moon_staff
+      - minecraft:staff_stab
+      - minecraft:wasser_stab
+recipes:
+  minecraft:moon_staff:
+    type: shaped
+    pattern:
+      - AAA
+      - BBB
+      - " B "
+    ingredients:
+      A: minecraft:diamond
+      B: minecraft:obsidian
+    result:
+      id: minecraft:moon_staff
+      count: 1
+  minecraft:staff_stab:
+    type: shaped
+    pattern:
+      - " AB"
+      - " AC"
+      - "  C"
+    ingredients:
+      A: minecraft:iron_nugget
+      B: minecraft:string
+      C: minecraft:stick
+    result:
+      id: minecraft:staff_stab
+      count: 1
+  minecraft:wasser_stab:
+    type: shaped
+    pattern:
+      - " A "
+      - BCB
+      - " C "
+    ingredients:
+      A: minecraft:water_bucket
+      B: minecraft:diamond
+      C: minecraft:stick
+    result:
+      id: minecraft:wasser_stab
+      count: 1

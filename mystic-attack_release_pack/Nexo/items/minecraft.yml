@@ -1,0 +1,66 @@
+ban_hammer:
+  itemname: Ban Hammer
+  material: PAPER
+  AttributeModifiers:
+    - attribute: ATTACK_DAMAGE
+      amount: 100
+      operation: ADD_NUMBER
+      slot: HAND
+    - attribute: ATTACK_SPEED
+      amount: 1
+      operation: ADD_NUMBER
+      slot: HAND
+    - attribute: KNOCKBACK_RESISTANCE
+      amount: 10
+      operation: ADD_NUMBER
+      slot: HAND
+  Components:
+    max_stack_size: 1
+  Pack:
+    texture: mystic-attack:item/minecraft/ban_hammer
+    parent_model: mystic-attack:item/minecraft/ban_hammer
+moon_staff:
+  itemname: Moon Staff
+  material: PAPER
+  AttributeModifiers:
+    - attribute: ATTACK_DAMAGE
+      amount: 6
+      operation: ADD_NUMBER
+      slot: HAND
+    - attribute: ATTACK_SPEED
+      amount: 0.6000000000000001
+      operation: MULTIPLY_SCALAR_1
+      slot: HAND
+  Pack:
+    texture: mystic-attack:item/minecraft/moon_staff
+    parent_model: mystic-attack:item/minecraft/moon_staff
+staff_stab:
+  itemname: Staff stab
+  material: PAPER
+  AttributeModifiers:
+    - attribute: ATTACK_DAMAGE
+      amount: 6
+      operation: ADD_NUMBER
+      slot: HAND
+    - attribute: ATTACK_SPEED
+      amount: 0.6000000000000001
+      operation: MULTIPLY_SCALAR_1
+      slot: HAND
+  Pack:
+    texture: mystic-attack:item/minecraft/staff_stab
+    parent_model: mystic-attack:item/minecraft/staff_stab
+wasser_stab:
+  itemname: Wasser Stab
+  material: PAPER
+  AttributeModifiers:
+    - attribute: ATTACK_DAMAGE
+      amount: 6
+      operation: ADD_NUMBER
+      slot: HAND
+    - attribute: ATTACK_SPEED
+      amount: 0.6000000000000001
+      operation: MULTIPLY_SCALAR_1
+      slot: HAND
+  Pack:
+    texture: mystic-attack:item/minecraft/wasser_stab
+    parent_model: mystic-attack:item/minecraft/wasser_stab

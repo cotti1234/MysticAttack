@@ -1,0 +1,63 @@
+name: MysticCore1
+version: 1.0.0
+description: Ein vollständiges Zauberstab-System für PaperMC
+author: Cotti
+main: de.cottisystem.zauberstab.ZauberstabPlugin
+api-version: 1.21
+
+# Optionale Abhängigkeiten
+softdepend:
+  - ItemsAdder
+
+commands:
+  zauberstab:
+    description: Hauptkommando für das Zauberstab-System
+    usage: /zauberstab <help|info|menu|skilltree|forge|level|skill|give>
+    aliases: [zs]
+  skilltree:
+    description: Öffnet den Skill-Tree
+    usage: /skilltree
+    aliases: [st]
+  forge:
+    description: Öffnet die Schmiede
+    usage: /forge
+  menu:
+    description: Öffnet das Zauberstab-Menü
+    usage: /menu
+  info:
+    description: Zeigt Informationen zum Zauberstab-System
+    usage: /info
+  help:
+    description: Zeigt die Hilfe
+    usage: /help
+  level:
+    description: Verwaltet Spieler-Level und Skill-Punkte (Admin)
+    usage: /level <add|set> <Spieler> <Wert>
+  skill:
+    description: Setzt Skill-Levels direkt (Admin)
+    usage: /skill <Spieler> <node> <level>
+  give:
+    description: Gibt Zauberstäbe oder Items (Admin)
+    usage: /give <Spieler> <basic|advanced|master> [Anzahl]
+
+permissions:
+  zauberstab.admin:
+    description: Admin-Zugriff auf alle Zauberstab-Befehle
+    default: op
+    children:
+      zauberstab.user: true
+      zauberstab.level: true
+      zauberstab.skill: true
+      zauberstab.give: true
+  zauberstab.user:
+    description: Grundlegender Zugriff auf das Zauberstab-System (help, info, menu, skilltree, forge)
+    default: true
+  zauberstab.level:
+    description: Erlaubt /zauberstab level (Skill-Punkte vergeben)
+    default: op
+  zauberstab.skill:
+    description: Erlaubt /zauberstab skill (Fähigkeiten setzen)
+    default: op
+  zauberstab.give:
+    description: Erlaubt /zauberstab give (Stäbe geben)
+    default: op

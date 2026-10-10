@@ -1,0 +1,16 @@
+items:
+  _internal:gui-invisible-item:
+    material: paper
+    custom_model_data: 777
+    data:
+      item_name: GUI Invisible Item
+    model:
+      type: minecraft:model
+      path: _internal:item/gui-invisible-item
+categories:
+  _internal:_internal:
+    name: <!i>Internal
+    icon: _internal:gui-invisible-item
+    priority: 1
+    list:
+      - _internal:gui-invisible-item

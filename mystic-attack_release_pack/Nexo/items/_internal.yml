@@ -1,0 +1,7 @@
+gui-invisible-item:
+  itemname: GUI Invisible Item
+  material: paper
+  Pack:
+    custom_model_data: 777
+    texture: mystic-attack:item/_internal/gui-invisible-item
+    parent_model: mystic-attack:item/_internal/gui-invisible-item

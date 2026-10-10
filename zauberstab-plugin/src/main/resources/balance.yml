@@ -1,0 +1,99 @@
+# ============================================
+# Zauberstab-System: Balance-Konfiguration
+# ============================================
+
+# ===== GLOBALE MULTIPLIKATOREN =====
+multipliers:
+  # Damage-Multiplikator (1.0 = 100%, 0.5 = 50%, 2.0 = 200%)
+  damage: 1.0
+  
+  # Cooldown-Multiplikator (1.0 = 100%, 0.5 = 50%, 2.0 = 200%)
+  cooldown: 1.0
+  
+  # Mana-Kosten-Multiplikator (1.0 = 100%, 0.5 = 50%, 2.0 = 200%)
+  mana_cost: 1.0
+
+# ===== DAMAGE CAPS =====
+damage_caps:
+  # Maximaler Damage gegen Spieler (PvP)
+  max_player_damage: 30
+  
+  # Maximaler Damage gegen Mobs (PvE)
+  max_mob_damage: 50
+  
+  # Minimaler Damage
+  min_damage: 1
+
+# ===== GLOBALE COOLDOWNS =====
+cooldowns:
+  # Globaler Cooldown zwischen Fähigkeiten (in ms)
+  global_cooldown: 500
+
+# ===== SPEZIELLE EFFEKTE =====
+effects:
+  # Knockback-Kraft für Fähigkeiten
+  knockback_force: 0.5
+  
+  # Heilungs-Multiplikator
+  healing_multiplier: 1.0
+  
+  # Slowness-Effekt-Dauer (in Ticks)
+  slowness_duration: 100
+  
+  # Slowness-Effekt-Level (0-4)
+  slowness_level: 1
+
+# ===== FÄHIGKEITS-BALANCING =====
+abilities:
+  water_blast:
+    # Damage pro Level
+    damage: [5, 7, 9, 11, 13]
+    # Cooldown pro Level (in Sekunden)
+    cooldown: [5, 4, 3, 2, 1]
+    # Mana-Kosten pro Level
+    mana_cost: [20, 25, 30, 35, 40]
+  
+  water_heal:
+    damage: [8, 10, 12, 14, 16]
+    cooldown: [8, 7, 6, 5, 4]
+    mana_cost: [25, 30, 35, 40, 45]
+  
+  fire_burst:
+    damage: [10, 13, 16, 19, 22]
+    cooldown: [6, 5, 4, 3, 2]
+    mana_cost: [30, 35, 40, 45, 50]
+  
+  fire_shield:
+    damage: [3, 4, 5, 6, 7]
+    cooldown: [10, 9, 8, 7, 6]
+    mana_cost: [20, 25, 30, 35, 40]
+  
+  ice_spike:
+    damage: [8, 10, 12, 14, 16]
+    cooldown: [4, 3, 2, 1, 1]
+    mana_cost: [25, 30, 35, 40, 45]
+  
+  ice_freeze:
+    damage: [4, 5, 6, 7, 8]
+    cooldown: [7, 6, 5, 4, 3]
+    mana_cost: [20, 25, 30, 35, 40]
+  
+  lightning_strike:
+    damage: [12, 15, 18, 21, 24]
+    cooldown: [8, 7, 6, 5, 4]
+    mana_cost: [35, 40, 45, 50, 55]
+  
+  lightning_chain:
+    damage: [8, 10, 12, 14, 16]
+    cooldown: [10, 9, 8, 7, 6]
+    mana_cost: [40, 45, 50, 55, 60]
+  
+  earth_quake:
+    damage: [15, 18, 21, 24, 27]
+    cooldown: [9, 8, 7, 6, 5]
+    mana_cost: [30, 35, 40, 45, 50]
+  
+  earth_wall:
+    damage: [5, 6, 7, 8, 9]
+    cooldown: [12, 11, 10, 9, 8]
+    mana_cost: [25, 30, 35, 40, 45]

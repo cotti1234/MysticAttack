@@ -1,0 +1,91 @@
+info:
+  namespace: mystic-attack
+recipes:
+  crafting_table:
+    moon_staff:
+      permission: itemsadder.craft.moon_staff
+      enabled: true
+      pattern:
+        - AAA
+        - BBB
+        - XBX
+      ingredients:
+        A: DIAMOND
+        B: OBSIDIAN
+      result:
+        item: mystic-attack:moon_staff
+        amount: 1
+    staff_stab:
+      permission: itemsadder.craft.staff_stab
+      enabled: true
+      pattern:
+        - XAB
+        - XAC
+        - XXC
+      ingredients:
+        A: IRON_NUGGET
+        B: STRING
+        C: STICK
+      result:
+        item: mystic-attack:staff_stab
+        amount: 1
+    wasser_stab:
+      permission: itemsadder.craft.wasser_stab
+      enabled: true
+      pattern:
+        - XAX
+        - BCB
+        - XCX
+      ingredients:
+        A: WATER_BUCKET
+        B: DIAMOND
+        C: STICK
+      result:
+        item: mystic-attack:wasser_stab
+        amount: 1
+items:
+  gui_invisible_item:
+    display_name: GUI Invisible Item
+    resource:
+      material: paper
+      model_id: 777
+      generate: false
+      model_path: item/_internal/gui_invisible_item
+  ban_hammer:
+    display_name: Ban Hammer
+    resource:
+      material: PAPER
+      model_path: item/minecraft/ban_hammer
+    max_stack_size: 1
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 100
+        attackSpeed: 1
+        knockbackResistance: 10
+  moon_staff:
+    display_name: Moon Staff
+    resource:
+      material: PAPER
+      model_path: item/minecraft/moon_staff
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 6
+        attackSpeed: 2.4000000000000004
+  staff_stab:
+    display_name: Staff stab
+    resource:
+      material: PAPER
+      model_path: item/minecraft/staff_stab
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 6
+        attackSpeed: 2.4000000000000004
+  wasser_stab:
+    display_name: Wasser Stab
+    resource:
+      material: PAPER
+      model_path: item/minecraft/wasser_stab
+    attribute_modifiers:
+      mainhand:
+        attackDamage: 6
+        attackSpeed: 2.4000000000000004

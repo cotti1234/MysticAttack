@@ -1,0 +1,8 @@
+info:
+  namespace: mystic-attack
+font_images:
+  test_glyph:
+    permission: mystic-attack.test_glyph
+    show_in_gui: false
+    path: gui/test_glyph.png
+    y_position: 12

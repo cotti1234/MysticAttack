@@ -1,0 +1,7 @@
+test_glyph:
+  texture: mystic-attack:gui/test_glyph
+  ascent: 44
+  height: 256
+  char: 
+  placeholders:
+    - <gui_test>
